@@ -24,9 +24,13 @@ header .navbar .navbar-brand{
 header .header-main{
     background: #555554;
 }
+header .header-main::after{
+    content: '';
+    clear: both;
+    display: block;
+}
 header .header-main .container{
-    padding: 10rem 10rem;
-    text-align: center;
+    padding: 10rem 0;
 }
 header .header-main h2{
     font: normal bold 60px/62px var(--raleway);
@@ -37,5 +41,32 @@ header .header-main h2>span{
 }
 header .header-main p{
     line-height: 22px;
-    padding-bottom: 4.75rem;
+    text-align: center;
+    padding: 1rem 10rem 4.5rem 10rem;
 }
+/* About area*/
+.about-area .about-left .text-area{
+    background: #ffbfbf;
+}
+.about-area .row .social  a{
+    /*display: inline-block;
+    margin: 4px 5px;*/
+}
+.about-area .row .social  a>i.fab{
+    /*color: white;
+    padding: 4px;
+    background: var(--primary-color);
+    border-radius: 50%;*/
+}
+.about-area .row .row{
+    padding: 0 0 0 .75rem;
+}
+.about-area h4{
+    font-weight: 600;
+    padding: 2.5rem 0 1.5rem 0;
+    color: #2D2D2D;
+}
+.about-area .row .row p:last-of-type{
+    padding: 0 0 1.75rem 0;
+}
+

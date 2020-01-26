@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: var(--raleway);
 }
-.section{
+section{
     padding: 1rem 0;
 }
 .subtitle{
@@ -15,21 +15,50 @@
 }
 .text-gray{
     color: #2d2d2d;
+    font-family: var(--raleway);
 }
 .button{
-    background: var(--primary-color);
-    color: #fff;
-    padding: 12px 25px;
-    font: normal 600 20px/22px var(--raleway);
-    text-decoration: none;
-    border-radius: 3px;
-    background-clip: padding-box;
+    padding: .75rem 1.6rem;
+    font: normal 700 18px/20px var(--raleway);
+    position: relative;
     border: 3px solid transparent;
-    transition: .6s ease;
+    border-radius: 4px;
 }
-.button:hover{
-    background: #fff;
-    color: var(--primary-color);
-    text-decoration: none;
+
+.button.primary-button{
+    background: var(--primary-color);
     background-clip: padding-box;
+    color: whitesmoke;
+    transition: background .6s ease;
+    box-shadow: var(--box-shadow);
+}
+
+.button.primary-button:hover{
+    background: whitesmoke;
+    background-clip: padding-box;
+    color: black;
+    text-decoration: none;
+}
+
+.button.primary-button::after{
+    position: absolute;
+    top: -2px; left: -2px;
+    bottom: -2px;  right: -2px;
+    background: var(--primary-color);
+    content: ' ';
+    z-index: -1;
+    border-radius: 4px;
+}
+h3{
+    font: normal 500 35px/38px var(--raleway);
+    margin: 0;
+}
+h3.title>span{
+    color: var(--primary-color);
+}
+.img-shape>img{
+    width: 7rem;
+}
+h4{
+    font-size: 24px;
 }
