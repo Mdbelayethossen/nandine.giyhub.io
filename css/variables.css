@@ -1,0 +1,6 @@
+/* CSS Variables */ 
+:root{
+    --gradient-color1: linear-gradient(#262d32, #46525b);
+    --gradient-color2: linear-gradient(#439ed5, #378acd);
+    --raleway: 'Raleway', sans-serif;
+}
