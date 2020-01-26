@@ -7,3 +7,29 @@
 .section{
     padding: 1rem 0;
 }
+.subtitle{
+    font-size: 14px;
+}
+.text-white{
+    color: #fff;
+}
+.text-gray{
+    color: #2d2d2d;
+}
+.button{
+    background: var(--primary-color);
+    color: #fff;
+    padding: 12px 25px;
+    font: normal 600 20px/22px var(--raleway);
+    text-decoration: none;
+    border-radius: 3px;
+    background-clip: padding-box;
+    border: 3px solid transparent;
+    transition: .6s ease;
+}
+.button:hover{
+    background: #fff;
+    color: var(--primary-color);
+    text-decoration: none;
+    background-clip: padding-box;
+}

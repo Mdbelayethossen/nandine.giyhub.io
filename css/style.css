@@ -8,5 +8,34 @@ header .navbar{
     padding: 0 5rem;
 }
 header .navbar .navbar-brand{
-    padding: .5rem 1rem;
+    padding: .5rem 3rem .5rem 1rem;
+}
+.navbar .navbar-nav{
+    padding: 0 0rem 0 20rem;
+}
+.navbar .navbar-nav .nav-item{
+    padding: 0 .75rem 0 0rem;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.navbar .navbar-nav .nav-item:hover .nav-link{
+    color: #fff;
+}
+header .header-main{
+    background: #555554;
+}
+header .header-main .container{
+    padding: 10rem 10rem;
+    text-align: center;
+}
+header .header-main h2{
+    font: normal bold 60px/62px var(--raleway);
+    padding-bottom: 1.5rem;
+}
+header .header-main h2>span{
+    color: var(--primary-color);
+}
+header .header-main p{
+    line-height: 22px;
+    padding-bottom: 4.75rem;
 }
