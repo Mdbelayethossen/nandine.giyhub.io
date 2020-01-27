@@ -52,6 +52,7 @@ section{
 h3{
     font: normal 500 35px/38px var(--raleway);
     margin: 0;
+    text-transform: uppercase;
 }
 h3.title>span{
     color: var(--primary-color);
@@ -61,4 +62,8 @@ h3.title>span{
 }
 h4{
     font-size: 24px;
+}
+.service-title{
+    font: normal 500 18px/18px var(--raleway);
+    color: #333333;
 }
