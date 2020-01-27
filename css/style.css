@@ -144,6 +144,7 @@ header .header-main p {
     text-transform: uppercase;
 }
 
+/* Count area */
 .count-area{
     background: #555554;
 }
@@ -169,3 +170,4 @@ header .header-main p {
     font: normal 500 16px/16px var(--raleway);
     margin: 0 0 .5rem 0;
 }
+/* Count area end */
