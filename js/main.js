@@ -22,7 +22,7 @@ $(document).ready(function(){
     $(' .my-team .owl-carousel').owlCarousel({
         loop: true,
         autoplay: true,
-        dots: true,
+        dots:false,
         responsive: {
             0: {
                 items: 1
