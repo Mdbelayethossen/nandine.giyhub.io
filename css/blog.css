@@ -1,0 +1,25 @@
+.error-1{
+    background: #555554;
+    padding: 3rem 0;
+}
+.error-1 .container div{
+    text-transform: uppercase;
+    font: normal 500 24px/26px var(--raleway);
+    letter-spacing: 1.5px;
+}
+.error-1 .container div > span{
+    color: var(--primary-color);
+}
+.blog-area .row .button{
+    padding: .4rem 1.5rem;
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 0px;
+    margin: 0 .5rem;
+}
+.button.primary-button::after{
+    border-radius: 1px;
+}
+.blog-area .row .row .all-content{
+    margin: 3rem .5rem 0 .5rem;
+}
