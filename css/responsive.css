@@ -38,6 +38,9 @@
     .video-area h6 {
         font: normal 600 19px/20px var(--raleway);
     }
+    .blog-area .all-content {
+        margin: 1rem .5rem;
+    }
 }
 @media all and (max-width: 425px) {
     header .navbar {
