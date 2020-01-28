@@ -17,6 +17,12 @@ $(document).ready(function(){
 
     $('.portpolio-area .button-group #btn1').trigger('click');
 
+    // Magnific PopUp Init
+    $('.portpolio-area .grid .test-popup-link').magnificPopup({
+        type: 'image',
+        gallery: { enabled: true }
+    });
+
     // Owl-carousel
 
     $(' .my-team .owl-carousel').owlCarousel({
