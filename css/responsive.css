@@ -71,5 +71,11 @@
         top: -36px;
         left: 9rem;
     }
+    footer .copyright{
+        text-align: center !important;
+    }
+    footer .social{
+        text-align: center !important;
+    }
 
 }
