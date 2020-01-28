@@ -27,6 +27,9 @@ $(document).ready(function(){
             0: {
                 items: 1
             },
+            320: {
+                items: 1
+            },
             560: {
                 items: 2
             },

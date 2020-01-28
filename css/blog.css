@@ -23,3 +23,46 @@
 .blog-area .row .row .all-content{
     margin: 3rem .5rem 0 .5rem;
 }
+.blog-area .row .row .title h3{
+    font: normal 600 22px/24px var(--raleway);
+}
+.blog-area .row .row .title span{
+    position: absolute;
+    bottom:-.5rem;
+    width: 88%;
+    border-bottom: 2px solid #bababa;
+}
+.blog-area .row .post > .row .p-container{
+    font: normal 400 14px/19px var(--raleway);
+    color: #252525;
+}
+.blog-area .row .post > .row .p-container .date{
+    color: #666666;
+}
+.blog-area .row .c-name a{
+    font: normal 500 14px/16px var(--raleway);
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #252525;
+}
+.blog-area .row .c-name a:hover{
+    color: var(--primary-color);
+    cursor: pointer;
+}
+@media all and (max-width: 1024px){
+    .blog-area .all-content .content .row a.comment {
+        position: absolute;
+        top: -7px;
+        left: 0rem;
+    }
+}
+@media all and (max-width: 425px){
+    .blog-area{
+        margin: 0 !important;
+    }
+    .blog-area .all-content .content .row a.comment {
+        position: absolute;
+        top: -36px;
+        left: 8rem;
+    }
+}
