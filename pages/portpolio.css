@@ -1,11 +1,13 @@
-.error-1{
+.error-1 {
     background: #555554;
 }
-.error-1 .container div{
+
+.error-1 .container div {
     text-transform: uppercase;
     font: normal 500 18px/20px var(--raleway);
     letter-spacing: 1.5px;
 }
-.error-1 .container div > span{
+
+.error-1 .container div>span {
     color: var(--primary-color);
 }

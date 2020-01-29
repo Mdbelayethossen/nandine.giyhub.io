@@ -2,105 +2,133 @@
     header .navbar {
         padding: 0 3rem;
     }
+
     .navbar .navbar-nav {
         padding: 0 0rem 0 10rem;
     }
 }
+
 @media all and (max-width: 1024px) {
     .navbar .navbar-nav {
         padding: 0 0rem 0 7rem;
     }
+
     .t-area p {
         padding: 0 7rem;
     }
 }
+
 @media all and (max-width: 990px) {
     .blog-area .all-content {
         margin: 1rem .5rem;
     }
-    .blog-area .row .img{
+
+    .blog-area .row .img {
         text-align: center;
     }
 }
+
 @media all and (max-width: 768px) {
     header .navbar {
         padding: 0 5rem;
     }
+
     .navbar .navbar-nav {
         padding: 0 0rem 0 28rem;
     }
+
     header .header-main h2 {
         font: normal bold 30px/30px var(--raleway);
         padding-bottom: 1rem;
     }
+
     header .header-main p {
         line-height: 22px;
         text-align: center;
         padding: .75rem;
     }
-    .blog-area .row .img{
+
+    .blog-area .row .img {
         text-align: center;
     }
+
     .t-area p {
         padding: 0 6rem;
         text-align: center;
     }
+
     .button {
         padding: 0.5rem 0.5rem;
         font: normal 700 15px/17px var(--raleway);
     }
+
     .about-area .row .row p:last-of-type {
         padding: 0 0 0.5rem 0;
     }
+
     .about-area .row .img {
         text-align: center;
     }
+
     .video-area h6 {
         font: normal 600 19px/20px var(--raleway);
     }
-    footer .copyright{
+
+    footer .copyright {
         text-align: center !important;
     }
-    footer .social{
+
+    footer .social {
         text-align: center !important;
     }
 }
+
 @media all and (max-width: 425px) {
     header .navbar {
         padding: 0 1rem;
     }
+
     .navbar .navbar-nav {
         padding: 0 0rem 0 2rem;
     }
+
     header .header-main .container {
         padding: 3rem 0;
     }
+
     header .header-main h2 {
         font: normal bold 26px/29px var(--raleway);
         padding-bottom: .5rem;
     }
+
     header .header-main p {
         padding: 1rem 1.5rem;
     }
-    .blog-area .row .img{
+
+    .blog-area .row .img {
         text-align: center;
     }
+
     .t-area p {
         padding: 0 2rem;
         text-align: center;
     }
+
     .skill .row p.subtitle {
         padding: 0;
     }
+
     .blog-area .all-content .content .row a.comment {
         position: absolute;
         top: -36px;
         left: 9rem;
     }
-    footer .copyright{
+
+    footer .copyright {
         text-align: center !important;
     }
-    footer .social{
+
+    footer .social {
         text-align: center !important;
     }
 

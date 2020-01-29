@@ -1,23 +1,28 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: var(--raleway);
 }
-section{
+
+section {
     padding: 1rem 0;
 }
-.subtitle{
+
+.subtitle {
     font-size: 14px;
 }
-.text-white{
+
+.text-white {
     color: #fff;
 }
-.text-gray{
+
+.text-gray {
     color: #2d2d2d;
     font-family: var(--raleway);
 }
-.button{
+
+.button {
     padding: .75rem 1.6rem;
     font: normal 700 18px/20px var(--raleway);
     position: relative;
@@ -25,7 +30,7 @@ section{
     border-radius: 4px;
 }
 
-.button.primary-button{
+.button.primary-button {
     background: var(--primary-color);
     background-clip: padding-box;
     color: whitesmoke;
@@ -33,38 +38,45 @@ section{
     box-shadow: var(--box-shadow);
 }
 
-.button.primary-button:hover{
+.button.primary-button:hover {
     background: whitesmoke;
     background-clip: padding-box;
     color: black;
     text-decoration: none;
 }
 
-.button.primary-button::after{
+.button.primary-button::after {
     position: absolute;
-    top: -2px; left: -2px;
-    bottom: -2px;  right: -2px;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
     background: var(--primary-color);
     content: ' ';
     z-index: -1;
     border-radius: 4px;
 }
-h3{
+
+h3 {
     font: normal 500 35px/38px var(--raleway);
     margin: 0;
     text-transform: uppercase;
 }
-h3.title>span{
+
+h3.title>span {
     color: var(--primary-color);
 }
-.img-shape>img{
+
+.img-shape>img {
     width: 7rem;
     margin-bottom: 1.5rem;
 }
-h4{
+
+h4 {
     font-size: 24px;
 }
-.service-title{
+
+.service-title {
     font: normal 500 18px/18px var(--raleway);
     color: #333333;
     text-transform: capitalize;

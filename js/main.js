@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
     let $btns = $('.portpolio-area  .button-group button');
 
 
@@ -16,13 +16,13 @@ $(document).ready(function(){
     })
 
     $('.portpolio-area .button-group #btn1').trigger('click');
-   
+
     // Owl-carousel
 
     $(' .my-team .owl-carousel').owlCarousel({
         loop: true,
         autoplay: true,
-        dots:false,
+        dots: false,
         responsive: {
             0: {
                 items: 1
@@ -38,5 +38,26 @@ $(document).ready(function(){
             }
         }
     })
-    
-  });
+    // Owl-carousel-2
+
+    $(' .t-area .owl-carousel').owlCarousel({
+        loop: true,
+        autoplay: true,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            320: {
+                items: 1
+            },
+            560: {
+                items: 1
+            },
+            1200: {
+                items: 1
+            }
+        }
+    })
+
+});
