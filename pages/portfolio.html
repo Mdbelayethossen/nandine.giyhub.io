@@ -192,6 +192,12 @@
     <script src="../js/isotope.min.js"></script>
     <script src="../vendor/popup/jquery.magnific-popup.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/main.js"></script>
+    <script>
+        // Magnific PopUp Init
+        $('.portpolio-area .grid .test-popup-link').magnificPopup({
+        type: 'image',
+        gallery: { enabled: true }
+        });
+    </script>
 </body>
 </html>
