@@ -5,8 +5,12 @@
 /* Import Global Css */
 @import url(./global.css);
 
+
 header .navbar {
     padding: 0 5rem;
+}
+header nav{
+    background: #232323;
 }
 
 header .navbar .navbar-brand {
@@ -28,14 +32,15 @@ header .navbar .navbar-brand {
 }
 
 header .header-main {
-    background: #555554;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)) no-repeat top center fixed;
+    background-size: cover;
+    transition: .6s ease;
+}
+header .header-main:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) no-repeat top center fixed;
+    background-size: cover;
 }
 
-header .header-main::after {
-    content: '';
-    clear: both;
-    display: block;
-}
 
 header .header-main .container {
     padding: 10rem 0;
@@ -53,29 +58,75 @@ header .header-main h2 > span {
 header .header-main p {
     line-height: 22px;
     text-align: center;
-    padding: 1rem 10rem 4.5rem 10rem;
+    padding: 1rem 10rem .5rem 10rem;
 }
 
 /* About area*/
-.about-area .about-left .text-area {
+/* .about-area .about-left .text-area {
     background: #3c1917;
+}*/
+.about-area .about-img{
+    position: relative;
+    height: 450px;
+    overflow: hidden;
+}
+.about-area .about-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+}
+.about-area .about-img:hover img{
+    filter: contrast(1.1);
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+}
+.about-area .about-img .overlay{
+    position: absolute;
+    background: transparent;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+}
+.about-area .about-img:hover .overlay{
+    background: rgba(207, 60, 52, 0.5);
+}
+.about-area .about-img .text-area{
+    position: absolute;
+    background: rgba(207, 60, 52, 0.5);
+    bottom: -2px;
+    width: 100%;
+    text-align: center;
 }
 
 .about-area .about-left .text-area h5 {
     color: #fff;
-    padding: 10px 0;
-    font: normal 600 24px/24px var(--raleway);
+    padding: 5px 0;
+    font: normal 600 22px/23px var(--raleway);
     margin-bottom: 0;
 }
 
 .about-area .row .social a > i.fab {
     margin: 5px 4px 10px 4px;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     background-color: var(--primary-color);
     color: #fff;
-    line-height: 40px;
-    font-size: 20px;
+    line-height: 35px;
+    font-size: 18px;
     text-align: center;
     border-radius: 50%;
     transition: .6s ease;
@@ -99,7 +150,7 @@ header .header-main p {
 .about-area .row .row p:last-of-type {
     padding: 0 0 4.5rem 0;
 }
-
+/* Video Area */
 .video-area {
     background: #464645;
 }
@@ -185,11 +236,37 @@ header .header-main p {
     background: transparent;
     color: var(--primary-color);
 }
+.portpolio-area .grid .overlay-container{
+    position: relative;
+    display: block;
+}
+.portpolio-area .grid .img{
+    box-shadow: 0px 0px 6px 5px #dfdfdf;
+}
 .portpolio-area .grid .img > img{
+
     transition: .5s ease;
 }
 .portpolio-area .grid .items:hover .img > img{
-    filter: brightness(.8);
+    filter: brightness(1.1);
+    transform: scale(1.02);
+}
+.portpolio-area .grid .overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: .2s ease-in;
+}
+.portpolio-area .grid .items:hover .overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(204, 77, 77, 0.5);
 }
 .portpolio-area .grid .content{
     width: 100%;
@@ -220,25 +297,36 @@ header .header-main p {
     width: 100%;
     top: 50%;
 }
-/* client area */
+/* Team area */
 .my-team{
     background: #f2f2f2;
 }
 .my-team .carousel .item {
-    width: auto;
+    width: 250px;
     height: auto;
     max-height: 380px;
     margin: 10px 15px;
     position: relative;
+	background: transparent;
+    box-shadow: 0 0 15px #c9c9c9;
+	transition: 0.5s ease;
 }
-.my-team .carousel .item{
-    background: transparent;
+.my-team .carousel .item::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -22.3rem;
+    background: rgba(255, 48, 48, 1);
+    transition: .5s ease;
 }
-/*.my-team .carousel .owl-item.active{
-    border-bottom: 5px solid #ff0000;
-}*/
+.my-team .carousel .item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #c9c9c9;
+}
+
 .my-team .carousel .item:hover{
-    background: #ff0000;
+    background: rgba(255, 48, 48, 1);
 }
 .my-team .carousel .item .img > img{
     transition: .6s ease;
